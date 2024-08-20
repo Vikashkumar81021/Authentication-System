@@ -18,28 +18,6 @@ export const mailTrapClient = new MailtrapClient({
   token: TOKEN,
 });
 
-const sender = {
-  email: "mailtrap@demomailtrap.com",
-  name: "Rohit Kumar",
-};
-
-// const recipients = [
-//   {
-//     email: "vikashkumarsing679@gmail.com",
-//   },
-// ];
-
-// client
-//   .send({
-//     from: sender,
-//     to: recipients,
-//     subject: "You are awesome!",
-//     html: "Congrats for sending test email with Mailtrap!",
-//     category: "Integration Test",
-//   })
-//   .then(console.log)
-//   .catch(console.error);
-
 app.listen(PORT, () => {
   console.log(`SERVER IS LISTEN AT ${PORT}`);
 });
